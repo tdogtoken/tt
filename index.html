@@ -1,0 +1,256 @@
+
+            
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Token sale page">
+
+    <title>Tdog Token Platform</title>
+   
+    <script>
+        var test = false; // False if contracts are on Mainnet
+        var contractAddressSale = '0xB1c2fA5C60A4bf127822f53a5cD1119e1Fbd126d';
+        var contractAddressToken = '0xda1A573d6B19F4c5207f199A1d5e97aBA02eed1F';
+    </script>
+    
+    <style>
+        
+        body {font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; color: #FFFFFF; background-color: #703642; font-size: 16px; font-weight: 400;}
+
+        h1 { font-size: 24px; font-weight: 700;} 
+        h2 { font-size: 22px; font-weight: 500;}
+
+        .small {
+            font-size: 12px;
+        }
+
+        .err {
+             color: #fa0707;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+        
+        a {
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: #C0C0C0;
+        }
+        
+        .clickable {
+            cursor: pointer;
+        }
+        
+        .clickable:hover {
+            color: #C0C0C0;
+        }
+        
+        button {
+          background-color: #283747;
+          border: none;
+          border-radius: 2px;
+          color: white;
+          padding: 5px 20px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 16px;
+          display: inline-block;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        
+        button:hover {
+          background-color: #008000;
+        }
+        
+        button[disabled] {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+        
+        hr {
+            margin: 20px;
+            border: 0;
+            border-top: 1px dashed;
+        }
+        
+        input {
+          text-align: center;
+          font-size: 18px;
+          background-color: #000000;
+          color: #FFFFFF;
+          border:1px solid;
+          max-width: 100%;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <div style="text-align: center">
+        <div class="network small"><span id="curnet"><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span> <span id="myAddr"></span>
+        <br>Referrer: <span id="referrer">none</span></div>
+    </div>
+    
+    <div style="text-align: center">
+                
+                <h2><font color="black">Welcome to Pitcoin Platform (狗窝网)</font></h2>
+                
+<p><button style="text-align: center"><a href="https://github.com/tdogtoken/PitcoinExchangeSourceCode/blob/main/README.md" target="_blank" class="button">Pitcoin Exchange For Investor and Trader (coming soon in few days or few weeks)</a></button></p>
+<p><button style="text-align: center"><a href="https://youtu.be/mqCbKzpJ8JA" target="_blank" class="button">Troubleshooting Pitcoin Wallet Guide</a></button></p>
+<p><button style="text-align: center"><a href="https://github.com/tdogtoken/PitcoinExchangeSourceCode/blob/main/README.md" target="_blank" class="button">Pitcoin Exchange Source Code</a></button></p>           
+<p><button style="text-align: center"><a href="https://github.com/tdogtoken/pitcoinwallet" target="_blank" class="button">Pitcoin Wallet Linux Version</a></button></p>
+<p><button style="text-align: center"><a href="https://youtu.be/Zk-xp5xiiGY" target="_blank" class="button">Pitcoin Wallet Linux Video Guide</a></button></p>
+<p><button style="text-align: center"><a href="https://github.com/tdogtoken/PitcoinWalletSourceCode" target="_blank" class="button">Pitcoin Wallet Source Code</a></button></p>             
+     Pitcoin is a private secure untraceable decentralized cryptocurrency. It was created for everyone especially for individual investor and trader, you control your own Pitcoin, no one knows how many Pitcoin you are holding, only you know your own. Sounds good, right? haha. Honestly, Bitcoin and other altcoin such as ETH LUNA DOGE and so on, they are not anonymous cryptocurrency, they can be trackable. However, Pitcoin is a truly anonymous privacy coin, symbol: PBTC, total supply:18,446,744 coins.
+     And the best part, we want everyone to learn running your own Pitcoin node own wallet and own mining some Pitoin, so everyone learns some expert administrative skills. The below procedure and video guide show you how to do that. Please keep in mind that even though Pitcoin is privacy coin, Pitcoin's main core is still using Bitcoin's main core. Please also keep in mind that when you fork bitcoin, don't choose the newest version bitcoin core to compile for fork. The older the better, usually the first version bitcoin core is better. If the first version bitcoin core gets problem, all the Altcoins will have problem because they all fork from compiling Bitcoin core. If you are expert on crypto and know some basic Linux administrative file command, below is the Pitcoin simplewallet miner node file and source code, you can start to mine your own Pitcoin with laptop or desktop. 
+     
+                 <p><button style="text-align: center"><a href="https://github.com/tdogtoken/PitcoinCLI" target="_blank">PitcoinCLI(command line interface) simplewallet miner and node file</a></button></p>  
+                <p><button style="text-align: center"><a href="https://github.com/tdogtoken/PitcoinSourceCode" target="_blank">Pitcoin Source Code</a></button></p> 
+                <P> We are going to store and use Pitcoin inside computer of computer (跌中跌,升中升,计中计)(sounds more secure, haha). To get start, please follow below procedure and watch the video guide link:</P>
+<p> 1. Download and Install Oracle VM VirtualBOX: </P>
+   <p><button style="text-align: center"><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">Download VirtualBOX</a></button></p>
+            
+            <p> 2. Download Linux ISO Ubuntu20.04.5 LTS: </P>
+            <p><button style="text-align: center"><a href="https://releases.ubuntu.com/20.04.5/?_ga=2.256257410.804221981.1664673186-251296044.1663774267" target="_blank">Download Ubuntu20.4.5</a></button></p>
+            
+            <p> 3. Install Unbuntu inside Oracle VM VirtualBOX.</P>
+<p> 4. After Install Ubuntu, open Terminal Command  type or copy and install dependencies(install one by one): </P>
+ 
+  <p>  sudo apt-get install git </P>
+ 
+   <p> sudo apt-get install make  </P>
+ 
+   <p> sudo apt-get install cmake </P>
+ 
+   <p> sudo apt-get install libboost-all-dev  </P>
+ 
+<p> 5. After install all dependencies, git clone PitcoinCLI by type or copy on Terminal Command (run one by one, and don't forget the capital words letter, Linux command is case sensitive.): </P>
+   
+ <p>   git clone https://github.com/tdogtoken/PitcoinCLI.git </P>
+   
+ <p>   ls  </P>
+   
+ <p>  cd PitcoinCLI </P>
+   
+ <p>  chmod +x pitcoind </P>
+   
+ <p>  chmod +x simplewallet </P>
+   
+  <p> chmod +x miner </P>
+   
+<p> 6. Open more than three Terminal Command, you can go to PicoinCLI folder and right click choose open Terminal. </P>
+
+<p> 7. After that, to connect Pitcoin node by type or copy below command run on one of the Terminal(Don't forget the dot and slash, Linux command is case sensitive.)</P>
+   
+ <p>  ./pitcoind </P>
+   
+<p> 8. After you connect to Pitcoin node and create your wallet by type or copy below command run on second Terminal and follow instruction shows on command: </P>  
+ <p>  ./simplewallet </P>  
+<p> 9. After you connect to Pitcoin node and create your wallet, run on third Terminal type or copy flollowing command to mine:</P>
+   
+ <p>  ./miner --address YourWalletAddressYouCreate </P>
+    
+<p><button style="text-align: center"><a href="https://youtu.be/6rdx2x83eF4" target="_blank">Store Mine and Transfer Pitcoin Video Part1</a></button></p> 
+<p><button style="text-align: center"><a href="https://youtu.be/ZBwNcbYxfBc" target="_blank">Store Mine and Transfer Pitcoin Video Part2</a></button></p> 
+<p><button style="text-align: center"><a href="https://youtu.be/vlY-swnMwCI" target="_blank">Store Mine and Transfer Pitcoin Video Part3</a></button></p> 
+<p><button style="text-align: center"><a href="https://youtu.be/tgZbx-UvhZU" target="_blank">Store Mine and Transfer Pitcoin Video Part4</a></button></p> 
+<p><button style="text-align: center"><a href="https://youtu.be/6g8c247Use8" target="_blank">Store Mine and Transfer Pitcoin Video Part5</a></button></p> 
+
+<h2><font color="yellow">Welcome to Tdog Token Platform</font></h2>
+         <h2>Token Info</h2>
+                <p>Tdog is a fully decentralized ThunderCore TT20 token.</P>
+        <p><span id="tokenName">Tdog</span> (Symbol: <span id="tokenSymbol">Tdog</span>) Token Contract Address:</p>
+        <p><a target="_blank" href="0xda1A573d6B19F4c5207f199A1d5e97aBA02eed1F" id="tokenAddress">0xda1A573d6B19F4c5207f199A1d5e97aBA02eed1F</a></p>
+        <!-- Reserved in case you want to show decimals and total supply: <span id="#tokenDecimalsUI"></span> <span id="#tokenSupplyUI"></span>-->
+        <p><button id="addToken" style="text-align: center">Add to wallet</button></p>
+        <p><button style="text-align: center"><a href="https://viewblock.io/thundercore/address/0xda1a573d6b19f4c5207f199a1d5e97aba02eed1f?tab=code" target="_blank">View Contract Source Code</a></button></p>         
+        <p><button style="text-align: center"><a href="https://laserswap.finance" target="_blank">Exchange Tdog With USDT on LaserSwap</a></button></p> 
+        <p><button style="text-align: center"><a href="https://tdogtoken.github.io/node" target="_blank">Tdog Node Stake Earn 240% Rewards</a></button></p>
+        <p><button style="text-align: center"><a href="https://youtu.be/UXLisyo_a00" target="_blank">How to add Tdog on Metamask wallet</a></button></p> 
+        <p><button style="text-align: center"><a href="https://youtu.be/17W8KBryE7c" target="_blank">How to add Tdog Token on Trust wallet</a></button></p>
+        <p><button style="text-align: center"><a href="https://youtu.be/KipmYJjbf5I" target="_blank">How to Buy or Sell Tdog With USDT on LaserSwap</a></button></p>
+        <p><font color="yellow">TdogMiner (Symbol:TDR) Dapp Decentralized Mining Game</font></P>
+        <p>TdogMiner (TDR) Token Contract Address:</P>
+        <p>0xc0cd71790E2ad0A82976BC712DEf3045177fe9a8</P>
+        <p><button style="text-align: center"><a href="https://github.com/tdogtoken/1#readme" target="_blank">View TdogMiner Details</a></button></p>
+        <p><button style="text-align: center"><a href="https://tdogtoken.github.io/1" target="_blank">TdogMiner 1 Minute Game</a></button></p>
+        <p><button style="text-align: center"><a href="https://tdogtoken.github.io/5" target="_blank">TdogMiner 5 Minutes Game</a></button></p>
+        <p><button style="text-align: center"><a href="https://tdogtoken.github.io/10" target="_blank">TdogMiner 10 Minute Game</a></button></p>
+    </div>
+    
+    <hr>
+    
+    <div style="text-align: center">
+        <h2><font color="#2E9AFE">Token sale info </font></h2>
+        <p>Total sale quantity: <span id="quantity">120000000000</span></p>
+        <p>Token price: <span id="price">0.005</span> <span class='eth'>TT</span> (<span id="ratio"></span> tokens per 1 TT)</p>
+        <p>Tokens sold: <span id="sold"></span></p>
+        <p>Total raised: <span id="raised"></span> <span class='eth'>TT</span></p>
+        <p>Unsold tokens: <span id="unsold"></span></p>
+        
+        <p>Token sale status: <span id="status">--</span></p>
+    </div>
+    
+    <hr>
+    
+    <div style="text-align: center">
+        <h2><font color="#2E9AFE">Buy Tdog Tokens (Set gas limit min. 2000000)</font></h2>
+        
+        <p><input type="number" id="buyQty" value="1"></p>
+        <h2><span id="buyAmount"></span> TT</h2>
+        <p><button id="buyBtn" style="text-align: center">Buy</button></p>
+        <p>My tokens balance: <span id="myTokens"></span></p>
+    </div>
+    
+    <hr>
+    
+    <div style="text-align: center">
+        <h2><font color="#2E9AFE">Sale Contract</font></h2>
+        <p>You can also buy tokens by sending TT to this contract (gas limit min. 200000):</p>
+        <p><a href="0xB1c2fA5C60A4bf127822f53a5cD1119e1Fbd126d" target="_blank" id="saleAddress">0xB1c2fA5C60A4bf127822f53a5cD1119e1Fbd126d</a> <button id="copyaddress">Copy address</button></p>
+            <div style="text-align: center" id="saleqr"></div>
+            <p style="text-align: center"><a style="text-decoration: none" id="saled" href="" download>Download QR</a></p>
+    </div>
+    
+    <hr>
+    
+    <div style="text-align: center">
+        <h2><font color="#2E9AFE">Decentralized Referral program</font></h2>
+        <p>Share your referral link and get paid instantly to your wallet for every referred token purchase.</p>
+        <p>Total paid to referrers: <span id="refTotal"></span> TT</p>
+        <p>Referral commission: <span id="refPercent">50</span>%</p>
+        <p>Your referral earnings: <span id="refMy"></span> TT</p>
+        
+        <p>Share your referral link or QR code and get commission for referred token purchases instantly to your wallet. Follow below steps:</p>
+            <p>1. You need to Insatall Metamask on your PC web Browser:</p>   
+                <p><button style="text-align: center"><a href="https://metamask.io/download/" target="_blank">Dowload Metamask Wallet Web Browser Version</a></button></p>
+                <p>2. After Installed Metamask wallet, Set up THUNDERCORE wallet on Metamask, see below link how to Set it Up:</p>
+                <p><button style="text-align: center"><a href="https://youtu.be/rAqzJ7w0dEI" target="_blank">Set Up THUNDERCORE Wallet on Metamask</a></button></p>
+                <p>3. After Set up and Login to your Metamask wallet, refresh our page you will see your Referral link on below.</p>
+                <p>4. Copy Referral link, send or share it with people on the world. And when someone purchases token, you get commision paid by TT coin instantly to your wallet.</p>
+        <p><input type="text" id="referLink" size="70" readonly="true"> <button id="copyreflink">Copy Referral link</button></p>
+        <div id="refqrcode">
+            <div style="text-align: center" id="refqr"></div>
+            <p style="text-align: center"><a style="text-decoration: none" id="refd" href="" download>Download Referral QR</a></p>
+            <p><button style="text-align: center"><a href="https://tdogtoken.github.io/tdog">Tdog Token Platform @2022 All Right Reserved.</a></button></p> 
+        </div>
+        <p id="refErr" class="err" style="display: none">Please connect your wallet on ThunderCore network to generate your referral link!</p>
+    </div>
+     
+            
+<script src='https://dappbuilder.org/js/jquery-3.6.0.min.js' type="text/javascript" charset="utf-8"></script>
+<script src='https://dappbuilder.org/js/ethers-5.0.umd.min.js' type="text/javascript" charset="utf-8"></script>
+<script src='https://dappbuilder.org/thundercore/tokensalewithreferral/js/tokensale.ui.js' type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
+            
