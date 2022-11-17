@@ -53,4 +53,4 @@ Pitcoin is a private secure untraceable decentralized cryptocurrency. It was cre
 <P><a href="https://youtu.be/6g8c247Use8" target="_blank" class="button">Store Mine and Transfer Pitcoin Video Part5</a> </P>
 
 # Tdog Token
-Welcome to Tdog Token Platform  https://tdogtoken.github.io/tdog
+Welcome to Tdog Token Platform  https://tdogtoken.github.io/tt
