@@ -1,0 +1,38 @@
+{
+  "name": "Example List",
+  "timestamp": "2020-06-15T12:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "keywords": [
+    "uniswap",
+    "default",
+    "list"
+  ],
+  "tokens": [
+    {
+      "address": "0xda1A573d6B19F4c5207f199A1d5e97aBA02eed1F",
+      "chainId": 108,
+      "name": "Tdog",
+      "symbol": "Tdog",
+      "decimals": 18
+    },
+    {
+      "address": "0x7447df62f5c4f869fc9e1cc71f66ad9e1ac5f116",
+      "chainId": 108,
+      "name": "BitcoinToken",
+      "symbol": "BTCT",
+      "decimals": 18
+    },
+   
+    {
+      "address": "0x327ab68271da9e1b3b0fe1485dc3f3ffd37193cd",
+      "chainId": 108,
+      "name": "WrappedThunder",
+      "symbol": "WPTT",
+      "decimals": 18
+    }
+  ]
+}
