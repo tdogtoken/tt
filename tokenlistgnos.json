@@ -1,0 +1,38 @@
+{
+  "name": "Token List",
+  "timestamp": "2020-06-15T12:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "keywords": [
+    "swap",
+    "default",
+    "list"
+  ],
+  "tokens": [
+    {
+      "address": "0x42098517D0336fffA91bF294c93D8cfFfE1AF11B",
+      "chainId": 100,
+      "name": "Tdog",
+      "symbol": "Tdog",
+      "decimals": 18
+    },
+    {
+      "address": "0xBf94ffAEF71fCd99eBf6414057c716A88D073fFb",
+      "chainId": 100,
+      "name": "BitcoinToken",
+      "symbol": "BTCT",
+      "decimals": 18
+    },
+   
+    {
+      "address": "0xbd67D5BcF219d0911C8f385BC10fce3c3b8A8a98",
+      "chainId": 100,
+      "name": "StableCoin",
+      "symbol": "USDG",
+      "decimals": 18
+    }
+  ]
+}
